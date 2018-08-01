@@ -14,7 +14,6 @@
 # limitations under the License.
 
 - include: os-keystone-install.yml
-- include: os-barbican-install.yml
 - include: os-glance-install.yml
 - include: os-cinder-install.yml
 - include: os-nova-install.yml
@@ -34,6 +33,7 @@
 - include: os-swift-install.yml
 - include: os-gnocchi-install.yml
 - include: os-tacker-install.yml
+- include: os-barbican-install.yml
 - include: os-ironic-install.yml
 - include: os-magnum-install.yml
 - include: os-trove-install.yml
