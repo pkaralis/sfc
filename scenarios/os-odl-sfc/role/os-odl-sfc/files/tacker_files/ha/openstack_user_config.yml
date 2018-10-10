@@ -148,7 +148,7 @@ image_hosts:
     container_vars:
       limit_container_types: glance
       glance_nfs_client:
-        - server: "172.29.244.11"
+        - server: "172.29.244.14"
           remote_path: "/images"
           local_path: "/var/lib/glance/images"
           type: "nfs"
@@ -160,7 +160,7 @@ image_hosts:
     container_vars:
       limit_container_types: glance
       glance_nfs_client:
-        - server: "172.29.244.12"
+        - server: "172.29.244.14"
           remote_path: "/images"
           local_path: "/var/lib/glance/images"
           type: "nfs"
@@ -172,7 +172,7 @@ image_hosts:
     container_vars:
       limit_container_types: glance
       glance_nfs_client:
-        - server: "172.29.244.13"
+        - server: "172.29.244.14"
           remote_path: "/images"
           local_path: "/var/lib/glance/images"
           type: "nfs"
