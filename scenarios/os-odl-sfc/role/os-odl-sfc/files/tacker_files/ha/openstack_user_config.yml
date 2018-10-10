@@ -152,8 +152,8 @@ image_hosts:
           remote_path: "/images"
           local_path: "/var/lib/glance/images"
           type: "nfs"
-          owner: glance
-          group: glance
+          owner: 'glance'
+          group: 'glance'
           options: "_netdev,auto"
   controller01:
     ip: 172.29.236.12
@@ -164,8 +164,8 @@ image_hosts:
           remote_path: "/images"
           local_path: "/var/lib/glance/images"
           type: "nfs"
-          owner: glance
-          group: glance
+          owner: 'glance'
+          group: 'glance'
           options: "_netdev,auto"
   controller02:
     ip: 172.29.236.13
@@ -176,8 +176,8 @@ image_hosts:
           remote_path: "/images"
           local_path: "/var/lib/glance/images"
           type: "nfs"
-          owner: glance
-          group: glance
+          owner: 'glance'
+          group: 'glance'
           options: "_netdev,auto"
 
 # nova api, conductor, etc services
