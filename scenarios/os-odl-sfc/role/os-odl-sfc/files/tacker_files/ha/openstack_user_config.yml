@@ -152,8 +152,8 @@ image_hosts:
           remote_path: "/images"
           local_path: "/var/lib/glance/images"
           type: "nfs"
-          owner: 'glance'
-          group: 'glance'
+          owner: glance
+          group: glance
           options: "_netdev,auto"
   controller01:
     ip: 172.29.236.12
@@ -164,8 +164,8 @@ image_hosts:
           remote_path: "/images"
           local_path: "/var/lib/glance/images"
           type: "nfs"
-          owner: 'glance'
-          group: 'glance'
+          owner: glance
+          group: glance
           options: "_netdev,auto"
   controller02:
     ip: 172.29.236.13
@@ -176,8 +176,8 @@ image_hosts:
           remote_path: "/images"
           local_path: "/var/lib/glance/images"
           type: "nfs"
-          owner: 'glance'
-          group: 'glance'
+          owner: glance
+          group: glance
           options: "_netdev,auto"
 
 # nova api, conductor, etc services
@@ -258,7 +258,7 @@ storage_hosts:
           nfs_mount_options: "rsize=65535,wsize=65535,timeo=1200,actimeo=120"
           nfs_shares_config: /etc/cinder/nfs_shares
           shares:
-            - ip: "172.29.244.14"
+            - ip: "172.29.244.11"
               share: "/volumes"
   controller01:
     ip: 172.29.236.12
@@ -271,7 +271,7 @@ storage_hosts:
           nfs_mount_options: "rsize=65535,wsize=65535,timeo=1200,actimeo=120"
           nfs_shares_config: /etc/cinder/nfs_shares
           shares:
-            - ip: "172.29.244.14"
+            - ip: "172.29.244.12"
               share: "/volumes"
   controller02:
     ip: 172.29.236.13
@@ -284,5 +284,5 @@ storage_hosts:
           nfs_mount_options: "rsize=65535,wsize=65535,timeo=1200,actimeo=120"
           nfs_shares_config: /etc/cinder/nfs_shares
           shares:
-            - ip: "172.29.244.14"
+            - ip: "172.29.244.13"
               share: "/volumes"
