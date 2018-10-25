@@ -15,6 +15,7 @@ global_overrides:
   external_lb_vip_address: 192.168.122.220
   tacker_use_barbican_flag : true
   glance_enable_v2_registry : True
+  glance_storage_path : "/var/lib/glance/v2/images" 
   tunnel_bridge: "br-vxlan"
   management_bridge: "br-mgmt"
   provider_networks:
