@@ -14,8 +14,6 @@ global_overrides:
   internal_lb_vip_address: 172.29.236.222
   external_lb_vip_address: 192.168.122.220
   tacker_use_barbican_flag : true
-  glance_enable_v2_registry : True
-  glance_storage_path : "/var/lib/glance/v2/images" 
   tunnel_bridge: "br-vxlan"
   management_bridge: "br-mgmt"
   provider_networks:
@@ -152,7 +150,7 @@ image_hosts:
       glance_nfs_client:
         - server: "172.29.244.14"
           remote_path: "/images"
-          local_path: "/var/lib/glance/v2/images"
+          local_path: "/var/lib/glance/images"
           type: "nfs"
           options: "_netdev,auto"
   controller01:
@@ -162,7 +160,7 @@ image_hosts:
       glance_nfs_client:
         - server: "172.29.244.14"
           remote_path: "/images"
-          local_path: "/var/lib/glance/v2/images"
+          local_path: "/var/lib/glance/images"
           type: "nfs"
           options: "_netdev,auto"
   controller02:
@@ -172,7 +170,7 @@ image_hosts:
       glance_nfs_client:
         - server: "172.29.244.14"
           remote_path: "/images"
-          local_path: "/var/lib/glance/v2/images"
+          local_path: "/var/lib/glance/images"
           type: "nfs"
           options: "_netdev,auto"
 
