@@ -150,7 +150,7 @@ image_hosts:
       glance_nfs_client:
         - server: "172.29.244.14"
           remote_path: "/images"
-          local_path: "/var/lib/glance/images"
+          local_path: "/var/lib/glance/v2/images"
           type: "nfs"
           options: "_netdev,auto"
   controller01:
@@ -160,7 +160,7 @@ image_hosts:
       glance_nfs_client:
         - server: "172.29.244.14"
           remote_path: "/images"
-          local_path: "/var/lib/glance/images"
+          local_path: "/var/lib/glance/v2/images"
           type: "nfs"
           options: "_netdev,auto"
   controller02:
@@ -170,7 +170,7 @@ image_hosts:
       glance_nfs_client:
         - server: "172.29.244.14"
           remote_path: "/images"
-          local_path: "/var/lib/glance/images"
+          local_path: "/var/lib/glance/v2/images"
           type: "nfs"
           options: "_netdev,auto"
 
