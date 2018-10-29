@@ -127,7 +127,7 @@ image_hosts:
       glance_nfs_client:
         - server: "172.29.244.12"
           remote_path: "/images"
-          local_path: "/var/lib/glance/images"
+          local_path: "/var/lib/glance/v2/images"
           type: "nfs"
           glance_system_user_name: glance
           glance_system_group_name: glance
